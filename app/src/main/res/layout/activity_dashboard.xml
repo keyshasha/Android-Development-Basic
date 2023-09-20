@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <ImageButton
+        android:id="@+id/ibMenu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/baseline_sort_24"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="250dp"
+        android:layout_height="350dp"
+        android:background="@drawable/latihan_rectangle"
+        android:layout_alignParentEnd="true"/>
+
+    <ImageView
+        android:id="@+id/tvPicture"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/ola"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/ibSale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sale"
+        android:textColor="#D32F2F"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_below="@+id/ibMenu"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="220dp"/>
+
+    <TextView
+        android:id="@+id/persen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10%"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textColor="#D32F2F"
+        android:layout_marginTop="-10dp"
+        android:layout_below="@+id/ibSale"
+        android:layout_marginStart="20dp"
+       />
+
+    <TextView
+        android:id="@+id/waktu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="**Limited time"
+        android:textSize="15dp"
+        android:layout_marginTop="-5dp"
+        android:layout_below="@+id/persen"
+        android:layout_marginStart="20dp"
+        />
+
+    <View
+        android:id="@+id/garis"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#D1CFCF"
+        android:layout_below="@+id/waktu"
+        android:layout_marginTop="45dp"/>
+
+    <TextView
+        android:id="@+id/Popular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Popular"
+        android:textSize="20dp"
+        android:textColor="#D32F2F"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/garis"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/ibnew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/garis"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="New Arrival"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brand"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/garis"
+        android:layout_marginStart="80dp"
+        android:layout_toRightOf="@+id/ibnew"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Popular"
+        app:cardCornerRadius="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/chiko"
+            android:scaleType="centerCrop"
+            android:background="@drawable/card_image_rectangle"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mario Toad"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/card1"
+        android:layout_below="@+id/ibnew"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"/>
+
+
+    <TextView
+        android:id="@+id/Bandai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bandai"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/card1"
+        android:layout_below="@+id/title"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/uang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 24.50"
+        android:textSize="20sp"
+        android:textColor="#D32F2F"
+        android:layout_toRightOf="@+id/card1"
+        android:layout_below="@+id/Bandai"
+        android:layout_marginStart="20dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card1"
+        app:cardCornerRadius="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/oww"
+            android:scaleType="centerCrop"
+            android:background="@drawable/card_image_rectangle"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HulkToad 7730"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/card2"
+        android:layout_below="@+id/uang"
+        android:layout_marginTop="75dp"
+        android:layout_marginStart="20dp"/>
+
+
+    <TextView
+        android:id="@+id/Hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hot Toys"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/card2"
+        android:layout_below="@+id/title2"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 539.11"
+        android:textSize="20sp"
+        android:textColor="#D32F2F"
+        android:layout_toRightOf="@+id/card2"
+        android:layout_below="@+id/Hot"
+        android:layout_marginStart="20dp"/>
+
+</RelativeLayout>

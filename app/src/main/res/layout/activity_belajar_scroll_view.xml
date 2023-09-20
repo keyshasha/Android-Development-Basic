@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BelajarScrollViewActivity">
+
+    <ImageView
+        android:id="@+id/ivDestination"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:src="@drawable/download"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:id="@+id/BookPict"
+        android:layout_width="125dp"
+        android:layout_height="170dp"
+        android:src="@drawable/cover"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/BookTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marvin and Me"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/BookPict"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <TextView
+        android:id="@+id/BookAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="Bojana Milk"
+        android:textColor="#4A4A4A"
+        android:layout_toRightOf="@+id/BookPict"
+        android:layout_below="@+id/BookTitle"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/ivStar"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@drawable/baseline_star_24"
+        android:backgroundTint="#FBC02D"
+        android:layout_toRightOf="@id/BookAuthor"
+        android:layout_below="@id/BookTitle"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5.0"
+        android:textSize="14dp"
+        android:layout_toRightOf="@id/ivStar"
+        android:layout_below="@id/BookTitle"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/riviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="132 Reviews"
+        android:textSize="14dp"
+        android:layout_toRightOf="@+id/rating"
+        android:layout_below="@+id/BookTitle"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/button"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/BookPict"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#E1D6D2"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Childern's Book"
+            android:textColor="#8E8D8D"
+            android:textSize="14dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/BookPict"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FFE1D6D2"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Growing Up"
+            android:textColor="#FF8E8D8D"
+            android:textSize="14dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/BookPict"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FFE1D6D2"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Facts Of Life"
+            android:textColor="#FF8E8D8D"
+            android:textSize="14dp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/sinopsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Synopsis"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/button"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <ScrollView
+        android:id="@+id/scrol"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/sinopsis"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:text="“Marvin and Me: How a Girl and a Mouse Beat Anxiety Together” seeks to help young children who are exhibiting signs of anxiety disorders. Pippa is a young girl struggling with intrusive and unpleasant thoughts. “What if my brother falls off his bike?” “What if Mom didn’t turn the stove off?” She seeks help from her beloved grandmother, who devises a clever scheme to help her master her anxiety by imagining her scary thoughts are a little mouse named Marvin.
+                The reader follows Pippa’s journey towards acceptance of her own thoughts and feelings. Above all else, “Marvin and Me” is a tool for helping young children learn the basics of mindfulness — by learning that scary thoughts are normal, that talking helps, and to trust in their own ability to do hard things. A board-certified psychiatrist who specializes in OCD and anxiety was a consultant for the book. "
+                android:textSize="14dp" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/ini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reviews"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/scrol"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/ini"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#FFFBF9"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/ola"/>
+
+                    <TextView
+                        android:id="@+id/textButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amazon Customer"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="60dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="This is an exceptionally written children’s book with a story that many can relate to as told through the eyes of a young girl named Pippa. Children and adults alike struggle with anxiety, worries or fears and this tells the story of how Pippa manages to deal with these feelings."
+                        android:textColor="@color/black"
+                        android:layout_below="@+id/textButton"
+                        android:textSize="14dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="15dp"
+                        />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_below="@+id/button5"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#FFFBF9"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/ola"/>
+
+                    <TextView
+                        android:id="@+id/textButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amazon Customer"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="60dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/textbutton4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="This is an exceptionally written children’s book with a story that many can relate to as told through the eyes of a young girl named Pippa. Children and adults alike struggle with anxiety, worries or fears and this tells the story of how Pippa manages to deal with these feelings."
+                        android:textColor="@color/black"
+                        android:layout_below="@+id/textButton2"
+                        android:textSize="14dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="15dp"
+                        />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:backgroundTint="#283593"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="Continue Riding"
+        android:textSize="15dp"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

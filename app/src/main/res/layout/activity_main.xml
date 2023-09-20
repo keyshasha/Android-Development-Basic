@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Dunia!"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="bold"
+       android:layout_gravity="center"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/labelNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nama"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="5dp"
+        />
+    <EditText
+        android:id="@+id/inputNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Nama Anda"
+        />
+    <TextView
+        android:id="@+id/labelKelas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kelas"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="5dp"
+        />
+    <EditText
+        android:id="@+id/inputKelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Kelas Anda"
+        />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:backgroundTint="#2E7D32"
+        android:fontFamily="sans-serif"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/tampilNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:textColor="@color/black"
+        android:textSize="25sp"
+        />
+    <TextView
+        android:id="@+id/tampilKelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        />
+
+</LinearLayout>

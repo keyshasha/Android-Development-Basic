@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyProjectAndroid</string>
+    <string name="sinopsis">Marvin and Me: How a Girl and a Mouse Beat Anxiety Together” seeks to help young children who are exhibiting signs of anxiety disorders. Pippa is a young girl struggling with intrusive and unpleasant thoughts. “What if my brother falls off his bike?” “What if Mom didn’t turn the stove off?” She seeks help from her beloved grandmother, who devises a clever scheme to help her master her anxiety by imagining her scary thoughts are a little mouse named Marvin.
+                The reader follows Pippa’s journey towards acceptance of her own thoughts and feelings. Above all else, “Marvin and Me” is a tool for helping young children learn the basics of mindfulness — by learning that scary thoughts are normal, that talking helps, and to trust in their own ability to do hard things. A board-certified psychiatrist who specializes in OCD and anxiety was a consultant for the book.</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="judul_Doa">Doa dan Dzikir App</string>
+    <string name="doa_harian"><![CDATA[Doa & Dzikir Harian]]></string>
+</resources>

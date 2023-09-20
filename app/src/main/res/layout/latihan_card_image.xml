@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="450dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivDestination"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:src="@drawable/swiss_destination"
+                android:scaleType="centerCrop"
+                />
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Niesen"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:layout_below="@+id/ivDestination"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/ivDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvLocation"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:text="Amazing view can be enjoyed from of refreshing city"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/loc"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/baseline_location_on_24"
+                android:backgroundTint="@color/black"
+                android:layout_below="@id/ivDescription"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/tempat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Switzerland"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:layout_below="@id/ivDescription"
+                android:layout_toRightOf="@+id/loc"
+                android:layout_marginTop="15dp"
+                />
+
+            <Button
+                android:id="@+id/price"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/baseline_price_check_24"
+                android:backgroundTint="@color/black"
+                android:layout_toRightOf="@+id/tempat"
+                android:layout_below="@id/ivDescription"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100/Package"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/price"
+                android:layout_below="@id/ivDescription"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#283593"
+                android:layout_below="@+id/price"
+                android:text="Plan Trip Now"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
